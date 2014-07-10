@@ -13,7 +13,7 @@ Before=getty.target
 Environment=HOME=/root
 WorkingDirectory=/root
 ExecStart=-/bin/bash
-ExecStopPost=-/bin/systemctl poweroff
+ExecStopPost=-/bin/systemctl poweroff --no-block
 Type=idle
 StandardInput=tty-force
 StandardOutput=inherit
